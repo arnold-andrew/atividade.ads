@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 10px;
+}
+th {
+    background-color: rgb(21, 4, 98);
+    color: white;
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/odd aplicado a todos os elemento impares/
+table tr:nth-child(odd) {
+ background-color: #ddd;
+}
+
+/even aplicado a todos os elemento pares/
+table tr:nth-child(even) {
+    background-color: white  ;
+    
+}
+</style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+<h3>tabela normal</h3>
+<table>
+    <tr>
+        <th>nome</th>
+        <th>Idade</th>
+        <th>Telefone</th>
+    </tr>
+    <tr>
+        <td>João</td>
+        <td>29</td>
+        <td>(48) 9999-9999</td>   
+    </tr>
+    <tr>
+        <td>Patricia</td>
+        <td>45</td>
+        <td>(46) 9874-2211</td>
+    </tr>
+</table>
+
+<h3>Tabela com colspan</h3>
+<table>
+    <tr>
+        <th>nome</th>
+        <th>Idade</th>
+        <th colspan="2">Telefone</th>
+     </tr>
+     <tr>
+        <td>João</td>
+        <td>29</td>
+        <td>(48) 9999-9999</td>
+        <td>(48) 8888-5522</td>
+        <tr>
+            <td>Patricia</td>
+            <td>45</td>
+            <td>(46) 9874-2211</td>
